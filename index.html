@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>EPOCH-2K22</title>
+</head>
+<body style="background-color:darkcyan ;">
+    <h5 class="text-center mt-1 text-light">EPOCH 2K22</h5>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 pt-3" style="background-color:white; border-radius: 25px;">
+            <form action="validated.html" id="form" method="get"  >
+                
+                    NAME:
+                       
+                            <input  id="name" type="text" class="form-control" name="name" onfocus="focusa()" onblur="blura()">
+                        
+                        <p  id="name1"> </p>
+        
+                       
+                            EMAIL ID:
+                        
+                            <input id="mail" type="email" class="form-control" name="mail">
+                        
+                        <p id="mail1"></p>
+                            USERNAME:
+        
+                            <input id="user" type="text" class="form-control" name="user" oninput="oi()">
+                        
+                        <p id="user1">  </p>  
+                            PASSWORD:         
+        
+                       
+                            <input id="pw" type="password" class="form-control" name="pw">
+                        
+                        <p id="pw1"></p>
+                            PHONE:
+        
+                        
+                            <input id="number" type="number" class="form-control" name="number">
+                        
+                        <p id="number1"> </p>            
+                       
+                            <select id="sel" class="form-select " name="sel">
+                                <option value="0" disabled selected value> -- select your state -- </option>
+                                <option value="1">Tamilnadu</option>
+                                <option value="1">Andhra Pradesh</option>
+                                <option value="1">Kerala</option>
+                                <option value="1">Karnataka</option>
+                              </select>
+                        
+                        <p id="sel1"></p>  
+        
+                       
+                            GENDER:   
+                            <input id="r1"  type="radio" class="form-check-input" value="1" name="r" checked>
+                            Female
+                            <input id="r2" type="radio" class="form-check-input" value="2"  name="r">
+                            Male
+                        
+                        <p id="radio1"> </p>            
+                        
+                            
+                        <input id="c1"  type="checkbox" class="form-check-input" value="dance" name="c1">
+                        Dancing                            
+                            <br>
+                            <input id="c2" type="checkbox" class="form-check-input" value="sing"  name="c2">
+                            Singing
+                            <br><input id="c3" type="checkbox" class="form-check-input" value="drama"  name="c3">
+                            Drama
+                              <br><input id="c4" type="checkbox" class="form-check-input" value="gd"  name="c4"> 
+                            Group Dance
+                            <br> 
+                        
+                        <p id="check1"> </p>            
+                        
+                            <input class="btn btn-dark mb-2" style="border-radius:40px;" onclick="validate()"   value="SUBMIT">
+                        
+            </form>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    
+<script src="script.js">
+
+</script>
+</body>
+</html>
